@@ -1,0 +1,34 @@
+{
+    "name": "Text-Translator",
+    "manifest_version": 2,
+    "description": "Chrome 划词翻译小插件，基于有道翻译API",
+    "version": "1.0.0",
+    "icons": {
+      "16": "ico/16.png",
+      "48": "ico/48.png",
+      "128": "ico/128.png"
+    },
+	"web_accessible_resources":[
+      "images/starky.png",
+      "images/starsy.png"
+    ],
+	"permissions": [
+      "https://dict.youdao.com/*",
+      "https://fanyi.youdao.com/*",
+      "http://dict.youdao.com/*",
+      "http://fanyi.youdao.com/*",
+      "http://openapi.youdao.com/*",
+      "https://openapi.youdao.com/*",
+      "contextMenus",
+      "tabs",
+      "storage",
+      "notifications"
+  	 ],
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*", "ftp://*/*", "file:///*"],
+        "js": ["lib/jquery.min.js","lib/startScore.js","index.js","lib/md5.js"],
+        "css": ["translator.css","transoptions.css"],
+        "run_at" : "document_end",
+        "all_frames" : true
+    }],
+}
