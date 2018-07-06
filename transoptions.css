@@ -1,13 +1,14 @@
 #transOptions{
 	position: absolute;
 	width: 332px;
-	height:400px;
+	height: 400px;
 	left: 50%;
+	top: 200px;
 	margin-left:-200px;
 	z-index: 99999;
 	font-family: Microsoft YaHei;
-	font-size: 17px;
-	padding: 0;
+	font-size: 17px !important;
+	padding: 0 !important;
 	text-align: left;
 }
 
@@ -33,8 +34,8 @@
 
 .optionMenu_class ul {
   position: fixed;
-	margin: 0;
-	padding: 0;
+	margin: 0 !important;
+	padding: 0 !important;
   z-index: 999999;
   list-style: none;
 }
@@ -47,7 +48,7 @@
   display: inline-block;
   height: 40px;
   width: 100px;
-  padding-top: 5px;
+  padding-top: 5px !important;
   cursor: pointer;
   border-radius: 15px 15px 0 0;
   border: 1px solid #ccc;
@@ -61,12 +62,11 @@
   height: auto;
   background: #fff;
   color: #000;
-  margin-top: 0px;
+  margin-top: -0.5px !important;
   overflow: hidden;
-  padding: 15px;
+  padding: 15px !important;
   border: 1px solid #ccc;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  margin-top: -0.5px;
 }
 
 .optionInfo_class .optionsPage_class {
@@ -74,8 +74,8 @@
 }
 
 #transForm .transLine_class {
-  margin-right: 10px;
-  padding: 5px 0 5px 0;
+  margin-right: 10px !important;
+  padding: 5px 0 5px 0 !important;
   border-top: 1px solid #ccc;
   height: 25px;
 }
@@ -83,8 +83,8 @@
 #submitArea {
 	position: relative;
   display: none;
-  padding: 5px;
-  margin-top: 10px;
+  padding: 5px !important;
+  margin-top: 10px !important;
   width: 290px;
   height: 70px;
   resize: none;
@@ -95,9 +95,9 @@
 	position: relative;
 	width: 290px;
 	height: auto;
-  margin-right: 10px;
+  margin-right: 10px !important;
   border-top: 1px solid #ccc;
-  padding-top: 5px;
+  padding-top: 5px !important;
   font-size: 12px;
   color: #ccc;
 }

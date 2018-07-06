@@ -1,4 +1,3 @@
-var scoreInfo = '';		//用于获取分数内容
 (function() {
 
   // 'use strict'//不用严格模式了，挠头
@@ -15,6 +14,7 @@ var scoreInfo = '';		//用于获取分数内容
   var Historied=0;
   var checkedValue=0;
   var selected = 0;
+  var scoreInfo = '';		//用于获取分数内容
 
   //这里定义了create函数用于封装生成的标签，后面会大量使用
   var create = function(obj) {
@@ -305,12 +305,6 @@ var scoreInfo = '';		//用于获取分数内容
   		    Translations=JSON.parse(data);
         }
       })
-    // Translations=[{"trans":"123","star":"5","num":"1"},
-    // {"trans":"\u54c8\u6bd4","star":"5","num":"1"},
-    // {"trans":"\u82f9\u679c","star":"4.7","num":"5"},
-    // {"trans":"shabi","star":"4","num":"2"},
-    // {"trans":"\u54c8\u76ae","star":"0","num":"0"}];
-    // console.log(Translations[0]);
   }
 
 
@@ -323,11 +317,11 @@ var scoreInfo = '';		//用于获取分数内容
 		name: 'transOptions',
 		parent: document.body,
 	})
-	var scrolly = window.scrollY || document.documentElement.scrollTop;
-	transOptions.style.top=scrolly+200+'px';
-  $(document.body).scroll(function() {
-    transOptions.style.top=scrolly+200+'px';
-  });
+	// var scrolly = window.scrollY || document.documentElement.scrollTop;
+	// transOptions.style.top=scrolly+200+'px';
+  // $(document.body).scroll(function() {
+  //   transOptions.style.top=scrolly+200+'px';
+  // });
 	//菜单栏
 	var optionMenu = create({
 		lable: 'div',

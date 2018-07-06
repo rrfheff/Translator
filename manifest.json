@@ -12,23 +12,11 @@
       "images/starky.png",
       "images/starsy.png"
     ],
-	"permissions": [
-      "https://dict.youdao.com/*",
-      "https://fanyi.youdao.com/*",
-      "http://dict.youdao.com/*",
-      "http://fanyi.youdao.com/*",
-      "http://openapi.youdao.com/*",
-      "https://openapi.youdao.com/*",
-      "contextMenus",
-      "tabs",
-      "storage",
-      "notifications"
-  	 ],
     "content_scripts": [{
         "matches": ["http://*/*", "https://*/*", "ftp://*/*", "file:///*"],
         "js": ["lib/jquery.min.js","lib/startScore.js","index.js","lib/md5.js"],
         "css": ["translator.css","transoptions.css"],
         "run_at" : "document_end",
         "all_frames" : true
-    }],
+    }]
 }
